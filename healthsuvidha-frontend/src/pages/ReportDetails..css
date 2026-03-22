@@ -1,0 +1,48 @@
+.report-details-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.report-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.download-btn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.download-btn:hover {
+  background: darkgreen;
+}
+@media (max-width: 600px) {
+  .report-box {
+    padding: 20px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

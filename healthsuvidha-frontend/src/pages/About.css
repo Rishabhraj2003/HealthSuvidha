@@ -1,0 +1,114 @@
+About Page Styles
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #caf0f8, #e0fbfc);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about-hero h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+/* About Details */
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 3rem 2rem;
+  background: #f1f9f9;
+}
+
+.about-card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.about-card ul {
+  padding-left: 18px;
+  text-align: left;
+  color: #555;
+}
+
+.about-card ul li {
+  margin-bottom: 6px;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #ffffff;
+}
+
+.team h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #0077b6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-member {
+  background: #f9fdfc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+  color: #0077b6;
+}
+
+.team-member p {
+  color: #444;
+  font-size: 0.95rem;
+}

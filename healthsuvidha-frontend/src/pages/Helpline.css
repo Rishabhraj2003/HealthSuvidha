@@ -1,0 +1,127 @@
+/* Hero */
+.helpline-hero {
+  background: linear-gradient(135deg, #e0fbfc, #caf0f8);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.helpline-hero h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 0.8rem;
+}
+
+.helpline-hero p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+.helpline-search {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  width: 250px;
+  font-size: 1rem;
+}
+
+/* Grid */
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.helpline-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.helpline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.helpline-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.helpline-card h3 {
+  margin-bottom: 0.5rem;
+  color: #023e8a;
+}
+
+.helpline-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.call-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.copy-btn {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #0077b6;
+  background: #fff;
+  color: #0077b6;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.copy-btn:hover {
+  opacity: 0.8;
+}
+
+/* Category Colors */
+.police .call-btn { background: #03045e; }
+.ambulance .call-btn { background: #d00000; }
+.doctor .call-btn { background: #0077b6; }
+.women .call-btn { background: #9d4edd; }
+.fire .call-btn { background: #ff5722; }
+.senior .call-btn { background: #ff9800; }
+.mental .call-btn { background: #4caf50; }
+.disaster .call-btn { background: #9c27b0; }
+.child .call-btn { background: #03a9f4; }
+.road .call-btn { background: #795548; }
+.poison .call-btn { background: #607d8b; }
+.covid .call-btn { background: #2196f3; }
+.blood .call-btn { background: #f44336; }
+
+/* Note */
+.helpline-note {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  color: #555;
+  font-size: 0.95rem;
+}

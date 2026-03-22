@@ -1,0 +1,152 @@
+/* Hero */
+.insurance-hero {
+  background: linear-gradient(135deg, #caf0f8, #e0fbfc);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.insurance-hero h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 0.8rem;
+}
+
+.insurance-hero p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+/* Plans Section */
+.insurance-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Plan Card */
+.plan-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card h3 {
+  color: #023e8a;
+  margin-bottom: 0.6rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  color: #0077b6;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Features */
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan-card ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Button */
+.plan-btn {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.plan-btn:hover {
+  background: #0077b6;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: #ffb703;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Benefits */
+.insurance-benefits {
+  background: #f1f9f9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.insurance-benefits h2 {
+  color: #0077b6;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+/* Hero, Plans, Benefits — same as before */
+
+/* Plan Controls */
+.plan-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.plan-controls input,
+.plan-controls select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}

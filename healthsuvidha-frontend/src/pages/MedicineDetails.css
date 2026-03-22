@@ -1,0 +1,62 @@
+.medicine-details {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.details-card {
+  width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.details-card h2 {
+  margin-bottom: 5px;
+}
+
+.company {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 22px;
+  color: #0b5ed7;
+  font-weight: bold;
+}
+
+.desc {
+  margin: 15px 0;
+}
+
+.details-card ul {
+  padding-left: 18px;
+}
+
+.details-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.buy-btn {
+  flex: 1;
+  padding: 12px;
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.cart-btn {
+  flex: 1;
+  padding: 12px;
+  background: #e9ecef;
+  border: none;
+  border-radius: 6px;
+}
+.cart-btn:hover {
+  background: #ced4da;
+}

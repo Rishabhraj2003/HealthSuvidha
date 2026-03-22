@@ -1,0 +1,52 @@
+.reports-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.report-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.report-card button {
+  padding: 10px 16px;
+  border: none;
+  background: #0b5ed7;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status {
+  font-weight: bold;
+}
+.status.pending {
+  color: #ffc107;
+}
+.status.completed {
+  color: #28a745;
+}
+.status.cancelled {
+  color: #dc3545;
+}
+.report-card button:hover {
+  background: #084298;
+}
+@media (max-width: 600px) {
+  .report-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .report-card button {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+

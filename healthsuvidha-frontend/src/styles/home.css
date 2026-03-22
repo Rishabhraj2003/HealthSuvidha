@@ -1,0 +1,325 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9fdfc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffdd57;
+}
+
+/* =========================
+   Fixed Buttons (Chatbot + Call)
+========================= */
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.fixed-buttons .chatbot-btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 28px;
+  padding: 14px 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.fixed-buttons .chatbot-btn:hover {
+  transform: scale(1.1);
+}
+
+.fixed-buttons .round-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.fixed-buttons .round-button:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background: linear-gradient(135deg, #caf0f8, #e0fbfc);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.hero .highlight {
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.hero blockquote {
+  margin: 1rem auto;
+  font-style: italic;
+  background: #ffffff;
+  padding: 1rem;
+  border-left: 5px solid #00b4d8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+/* =========================
+   Services Section
+========================= */
+.services {
+  padding: 3rem 2rem;
+  background: #f1f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #0077b6;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+  margin-bottom: 1rem;
+  color: #00b4d8;
+  font-size: 1.3rem;
+}
+
+.service p {
+  color: #555;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #0077b6;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* =========================
+   Chatbot Window
+========================= */
+.chatbot-window {
+  display: none;
+  position: fixed;
+  bottom: 80px; /* above buttons */
+  right: 20px;
+  width: 300px;
+  max-width: 90%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.chat-input button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.chat-message {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+}
+
+.bot-message {
+  background: #f1f1f1;
+  text-align: left;
+}
+
+.user-message {
+  background: #007bff;
+  color: white;
+  text-align: right;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fixed-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: 8px;
+  }
+}

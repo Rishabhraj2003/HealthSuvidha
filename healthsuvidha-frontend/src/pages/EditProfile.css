@@ -1,0 +1,164 @@
+/* =========================
+   EDIT PROFILE – HEALTHसुविधा
+   ========================= */
+
+.edit-profile-container {
+  min-height: 100vh;
+  background: #f4f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.edit-profile-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.edit-profile-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f172a;
+  font-size: 24px;
+}
+
+.edit-profile-card h2 span {
+  color: #2563eb;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+.edit-profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.edit-profile-form input,
+.edit-profile-form select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+  outline: none;
+  background: #f8fbff;
+  transition: all 0.2s ease;
+}
+
+.edit-profile-form input:focus,
+.edit-profile-form select:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+}
+
+/* Full width fields */
+.edit-profile-form input[type="file"],
+.edit-profile-form button {
+  grid-column: span 2;
+}
+
+/* =========================
+   IMAGE UPLOAD
+   ========================= */
+
+.profile-photo-upload {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-column: span 2;
+}
+
+.profile-photo-upload img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2563eb;
+}
+
+.profile-photo-upload label {
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.edit-profile-form button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.edit-profile-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.edit-profile-form button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SMALL TEXT
+   ========================= */
+
+.form-note {
+  grid-column: span 2;
+  font-size: 12px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* =========================
+   ANIMATION
+   ========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 600px) {
+  .edit-profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-profile-form input,
+  .edit-profile-form button {
+    grid-column: span 1;
+  }
+
+  .profile-photo-upload {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

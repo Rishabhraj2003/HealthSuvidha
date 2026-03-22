@@ -1,0 +1,137 @@
+.blood-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box select,
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BLOOD LIST */
+.blood-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.blood-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.blood-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+}
+
+.blood-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.call-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.request-btn {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.request-form input,
+.request-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  background: #555;
+  color: white;
+  margin-top: 10px;
+}
+
+/* DONATE */
+.donate-section {
+  margin-top: 40px;
+  background: #fbe9e7;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.donate-form {
+  display: grid;
+  gap: 12px;
+}
+
+.donate-form input {
+  padding: 10px;
+}
+
+.donate-form button {
+  background: #b71c1c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-box select,
+  .search-box input {
+    width: 100%;
+  }
+}

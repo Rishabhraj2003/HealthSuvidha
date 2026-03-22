@@ -1,0 +1,31 @@
+.confirm-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+}
+
+.confirm-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.confirm-card h3 {
+  margin-top: 15px;
+}
+
+.confirm-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.confirm-card button:hover {
+  background: #084298;
+}
